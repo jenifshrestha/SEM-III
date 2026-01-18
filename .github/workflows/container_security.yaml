@@ -24,4 +24,3 @@ jobs:
           image: bkimminich/juice-shop:latest # Direct reference to public image
           exit-code: false # Keep false so it doesn't fail your pipeline immediately
           only-severities: critical,high
-          
