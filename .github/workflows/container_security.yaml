@@ -5,6 +5,17 @@ on:
     branches:
       - main
 
+  workflow_dispatch:
+    inputs:
+      target_branch:
+        description: 'Choose branch to scan'
+        required: true
+        default: 'main'
+        type: choice
+        options:
+          - main
+          - container_security
+
 jobs:
   scan-public-image:
     runs-on: ubuntu-latest
