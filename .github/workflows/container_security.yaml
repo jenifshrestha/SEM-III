@@ -1,4 +1,4 @@
-name: Docker Scout Container Security
+name: Container Security (Docker Scout)
 
 on:
   push:
