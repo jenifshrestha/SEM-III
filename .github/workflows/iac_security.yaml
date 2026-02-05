@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - iac_security
 
   workflow_dispatch:
     inputs:
