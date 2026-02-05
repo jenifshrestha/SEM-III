@@ -7,15 +7,6 @@ on:
       - iac_security
 
   workflow_dispatch:
-    inputs:
-      target_branch:
-        description: 'Choose branch to scan'
-        required: true
-        default: 'main'
-        type: choice
-        options:
-          - main
-          - iac_security
 
 jobs:
   trivy-iac-scan:
